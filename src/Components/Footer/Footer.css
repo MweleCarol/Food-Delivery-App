@@ -51,6 +51,7 @@
     background-color: grey;
     border: none;
 }
+<<<<<<< HEAD
 
 /* ✅ MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
@@ -78,3 +79,15 @@
         gap: 30px;
     }
 }
+=======
+@media (max-width: 750px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+}
+>>>>>>> 70518f1 (Added the login Components)

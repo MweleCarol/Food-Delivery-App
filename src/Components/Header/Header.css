@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 .header {
     height: 42vw;
+=======
+.header{
+    height: 40vw;
+>>>>>>> 70518f1 (Added the login Components)
     margin: 30px auto;
     background: url('/header_img.png') no-repeat center center;
     background-size: cover; /* Fill the entire header */
@@ -76,3 +81,32 @@
         font-size: 1rem;
     }
 }
+<<<<<<< HEAD
+=======
+.header-contents button{
+      border: none;
+      color: #747474;
+      font-weight: 500;
+      padding: 1vw 2.3vw;
+      background-color: white;
+      font-size: max(1.2vw, 13px);
+      border-radius: 50px;
+}
+@media (max-width: 1050px) {
+   
+    .header-contents{
+        max-width: 50%;
+    }
+}
+@media (max-width: 750px) {
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p {
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
+>>>>>>> 70518f1 (Added the login Components)
