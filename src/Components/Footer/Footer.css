@@ -52,6 +52,7 @@
     border: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /* ✅ MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
@@ -80,6 +81,8 @@
     }
 }
 =======
+=======
+>>>>>>> d08baef (Few Changes to the interactiveness)
 @media (max-width: 750px){
     .footer-content{
         display: flex;
@@ -90,4 +93,36 @@
         text-align: center;
     }
 }
+<<<<<<< HEAD
 >>>>>>> 70518f1 (Added the login Components)
+=======
+=======
+
+/* ✅ MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .footer-content {
+        display: flex; /* Switch from grid to flex */
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+        align-items: center; /* Center each section */
+        text-align: center;
+    }
+
+    .footer-social-icons img {
+        width: 35px; /* Slightly smaller for mobile */
+        margin-right: 10px;
+    }
+
+    .footer {
+        padding: 20px 5vw;
+        gap: 30px;
+    }
+}
+>>>>>>> 6427a96 (Few Changes to the interactiveness)
+>>>>>>> d08baef (Few Changes to the interactiveness)

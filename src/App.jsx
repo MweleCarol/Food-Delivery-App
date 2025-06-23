@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-import React from "react";
-=======
+
+
 import React, { useState } from "react";
->>>>>>> 70518f1 (Added the login Components)
+
 import Navbar from "./Components/Navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
