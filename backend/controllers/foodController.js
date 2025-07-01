@@ -9,6 +9,9 @@ const addFood = async (req, res) => {
 
     let image_filename = `${req.file.filename}`;
 
+    console.log("Form body",req.body);
+
+
     const food = new foodModel({
         name: req.body.name,
         description:req.body.description,
@@ -18,17 +21,19 @@ const addFood = async (req, res) => {
     })
 
 
-    try{
-        await food.save();
+    
 
-        res.json({success:true, message:"Food Added"})
+    try {
+    const savedFood = await food.save();
+    console.log("Uploaded file:", req.file);
+    console.log("Saved to DB:", savedFood); // Add this!
 
-
-    }catch(error){
-        console.log(error)
-        res.json({success:false, message:"Error"})
-
+    res.status(201).json({ success: true, message: "Food Added", food: savedFood });
+    } catch (error) {
+        console.log("Error saving food:", error); // More helpful
+        res.status(500).json({ success: false, message: "Error", error: error.message });
     }
+
 
 
 }
