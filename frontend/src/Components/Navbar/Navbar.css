@@ -51,7 +51,59 @@
     border-radius: 5px;
     top: -8px;
     right: -8px;
+
 }
+
+.navbar-profile {
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  display: none;
+  z-index: 10;
+  background-color: #fff2ef;
+  border-radius: 6px;
+  border: 1px solid tomato;
+  outline: 2px solid white;
+  list-style: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  padding: 8px 0;
+}
+
+/* ✅ Show dropdown when parent is hovered */
+.navbar-profile:hover .nav-profile-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-profile-dropdown li:hover {
+  background-color: #ffe1db;
+  border-radius: 4px;
+}
+
+.nav-profile-dropdown hr {
+  margin: 6px 0;
+  border: none;
+  border-top: 1px solid #ffc4b7;
+}
+
+
 @media (max-width:1050px) {
     .navbar .logo{
         width: 140px;
