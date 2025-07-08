@@ -1,4 +1,4 @@
-Certainly! Here's a **professional `README.md`** tailored to your **Food Delivery App**, assuming it has an admin panel, backend API, and frontend React client. You can customize the project name, features, and tech stack further based on what you've implemented.
+
 
 ---
 
@@ -120,8 +120,14 @@ npm start
 > Add some screenshots of your UI here:
 
 * Homepage
+* ![image](https://github.com/user-attachments/assets/8e87cfe1-0319-452c-a3e4-b2592bc736d2)
+
 * Cart/Checkout
+* ![image](https://github.com/user-attachments/assets/26c2e853-c019-4087-8a8a-9e86576766cb)
+
 * Admin dashboard
+* ![image](https://github.com/user-attachments/assets/154a55bd-f360-4c2b-ba32-925625302651)
+
 
 ---
 
@@ -136,11 +142,9 @@ You can deploy the backend (e.g., on **Render**, **Railway**, or **Heroku**) and
 
 ---
 
-## 📌 TODO
-
-* [ ] Add user authentication
-* [ ] Add payment integration (e.g., Stripe or PayPal)
-* [ ] Enable order tracking notifications
+ the order can be tracked as well 
+ admin can set the status on the order delivery 
+  user authentication is provided 
 
 
 
