@@ -49,7 +49,10 @@ const loginUser = async (req, res) => {
 }
 
 const createToken = (id) => {
+    // Create JWT token
+    
     return jwt.sign({id}, process.env.JWT_SECRET);
+
 }
 
 
@@ -107,7 +110,15 @@ const registerUser = async (req, res) => {
 }
 
 //logout user
-const logoutUser = async (req, res) => {
+const logoutUser = async (req, res) => {t
+    try {
+        // Clear the token from the client side
+        
+        res.json({ success: true, message: "User logged out successfully" });
+    } catch (error) {
+        console.error("Error logging out user:", error);
+        res.status(500).json({ success: false, message: "Internal server error" });
+    }
 
 }
 
